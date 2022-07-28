@@ -25,8 +25,8 @@ public class IndexController {
         }
     }
 
-    @RequestMapping(value = "/app", method = RequestMethod.POST)
-    public String index() {
+    @RequestMapping(value = "/app")
+    public String app() {
         updateDatabase(getTimeStamp());
         return (getTimeStamp());
     }
